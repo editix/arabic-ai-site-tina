@@ -1,9 +1,10 @@
 backend:
   name: git-gateway
-  branch: main # or whatever your default branch is
+  branch: main
 
-media_folder: "public/" # Where images will be stored
-public_folder: "/"     # How images are referenced in code
+# It is safer to point these to a specific folder
+media_folder: "public/images" 
+public_folder: "/images"     
 
 collections:
   - name: "pages"
