@@ -1,6 +1,9 @@
 ---
 import MainLayout from '../layouts/MainLayout.astro';
 
+// This pulls data from the top of this file, which Decap CMS will edit
+const { title, description, hero_title, hero_subtext } = Astro.props.frontmatter || Astro.props;
+
 // These variables will be editable via Decap CMS later
 const pageTitle = "Arabic.AI Suite — The AI operating layer for Arabic-first enterprises";
 const pageDescription = "Four surfaces — Assistants, Translate, OCR, Speech — on the #1 Arabic AI model.";
