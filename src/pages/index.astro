@@ -1,4 +1,5 @@
 ---
+# BLOCK 1: Pure YAML for Decap CMS
 title: "Arabic.AI Suite"
 description: "The AI operating layer..."
 hero_eyebrow: "The Arabic.AI Suite · v2026"
@@ -9,12 +10,16 @@ btn_secondary_text: "Explore the suite"
 stats:
   - { label: "Words processed", value: "20", suffix: "B+", desc: "Across government & enterprise" }
   - { label: "Stanford HELM", value: "#1", desc: "for Arabic accuracy" }
+---
 
+---
+# BLOCK 2: Astro Logic and Imports
 import MainLayout from '../layouts/MainLayout.astro';
+const data = Astro.props.frontmatter || Astro.props;
 const { 
   title, description, hero_eyebrow, hero_title, hero_subtext, 
   btn_primary_text, btn_secondary_text, stats 
-} = Astro.props.frontmatter || Astro.props;
+} = data;
 ---
 <!-- ===================== HERO ===================== -->
 <MainLayout title={title} description={description}>

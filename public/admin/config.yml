@@ -12,6 +12,7 @@ collections:
       - label: "Home Page"
         name: "home"
         file: "src/pages/index.astro"
+        format: "yaml-frontmatter"
         fields:
           - { label: "Page Title", name: "title", widget: "string", required: false }
           - { label: "Page Description", name: "description", widget: "string", required: false }
