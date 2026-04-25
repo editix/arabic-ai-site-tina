@@ -2,7 +2,6 @@ backend:
   name: git-gateway
   branch: main
 
-# It is safer to point these to a specific folder
 media_folder: "public" 
 public_folder: ""     
 
@@ -10,7 +9,7 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-     - label: "Home Page"
+      - label: "Home Page"
         name: "home"
         file: "src/pages/index.astro"
         fields:
@@ -26,13 +25,13 @@ collections:
           - { label: "Primary Button Text", name: "btn_primary_text", widget: "string", required: false }
           - { label: "Secondary Button Text", name: "btn_secondary_text", widget: "string", required: false }
 
-      # Stats / Footprint List
-     - label: "Company Stats"
-         name: "stats"
-         widget: "list"
-         required: false
-         fields:
-          - { label: "Label", name: "label", widget: "string", required: false }
-          - { label: "Value", name: "value", widget: "string", required: false }
-          - { label: "Suffix", name: "suffix", widget: "string", required: false, hint: "e.g. B+ or +" }
-          - { label: "Description", name: "desc", widget: "string", required: false }
+          # Stats / Footprint List
+          - label: "Company Stats"
+            name: "stats"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Label", name: "label", widget: "string", required: false }
+              - { label: "Value", name: "value", widget: "string", required: false }
+              - { label: "Suffix", name: "suffix", widget: "string", required: false, hint: "e.g. B+ or +" }
+              - { label: "Description", name: "desc", widget: "string", required: false }
