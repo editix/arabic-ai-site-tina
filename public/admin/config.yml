@@ -14,7 +14,7 @@ collections:
         name: "home"
         file: "src/pages/index.astro"
         fields:
-          - { label: "Page Title", name: "title", widget: "string" }
-          - { label: "Page Description", name: "description", widget: "string" }
-          - { label: "Hero Main Heading", name: "hero_title", widget: "string" }
-          - { label: "Hero Subtext", name: "hero_subtext", widget: "text" }
+          - { label: "Page Title", name: "title", widget: "string", required: false }
+          - { label: "Page Description", name: "description", widget: "string", required: false }
+          - { label: "Hero Main Heading", name: "hero_title", widget: "string", required: false }
+          - { label: "Hero Subtext", name: "hero_subtext", widget: "text", required: false }
