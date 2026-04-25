@@ -3,8 +3,8 @@ backend:
   branch: main
 
 # It is safer to point these to a specific folder
-media_folder: "public/images" 
-public_folder: "/images"     
+media_folder: "public" 
+public_folder: ""     
 
 collections:
   - name: "pages"
